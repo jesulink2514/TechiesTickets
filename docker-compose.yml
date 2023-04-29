@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  techies.eventmanagement:
+    image: ${DOCKER_REGISTRY-}techieseventmanagement
+    build:
+      context: .
+      dockerfile: Techies.EventManagement/Dockerfile
