@@ -1,0 +1,18 @@
+version: 1
+apps:
+  - appID: events
+    appDirPath: Techies.EventManagement
+#    resourcesPath: .dapr/resources # (optional) can be default by convention
+#    configFilePath: .dapr/config.yaml # (optional) can be default by convention too, ignore if file is not found.
+    appProtocol: http
+    appPort: 5001
+#    appHealthCheckPath: "/healthz" 
+    command: ["dotnet","run"]
+  #- appID: backend # optional 
+  #  appDirPath: .dapr/backend/ # REQUIRED
+  #  appProtocol: grpc
+  #  appPort: 3000
+  #  unixDomainSocket: "/tmp/test-socket"
+  #  env:
+  #    - DEBUG: false
+  #  command: ["./backend"]

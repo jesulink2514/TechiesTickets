@@ -5,15 +5,16 @@ VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Techies.Registration", "Techies.Registration\Techies.Registration.csproj", "{D6AFD79E-FCAF-4401-93A3-DF4412E48085}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Techies.EventManagement", "Techies.EventManagement\Techies.EventManagement.csproj", "{DA399EC6-F85F-471D-991D-CC434510C473}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Techies.EventManagement", "Techies.EventManagement\Techies.EventManagement.csproj", "{DA399EC6-F85F-471D-991D-CC434510C473}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{62A65C99-3129-43DA-84D7-FDC4F418E19E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Techies.Notifications", "Techies.Notifications\Techies.Notifications.csproj", "{442D7C51-815F-4C00-9900-F8513A8CCD37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Techies.Notifications", "Techies.Notifications\Techies.Notifications.csproj", "{442D7C51-815F-4C00-9900-F8513A8CCD37}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{58B2CC0B-359A-48F0-ACDF-FE567EF739C8}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
+		techies-tickets.yml = techies-tickets.yml
 	EndProjectSection
 EndProject
 Global
