@@ -1,4 +1,4 @@
-﻿namespace Techies.EventManagement
+namespace Techies.Notifications
 {
     public class Event
     {

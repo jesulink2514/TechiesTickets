@@ -18,7 +18,7 @@ namespace Techies.EventManagement.Controllers
         [HttpGet]
         public async Task<Event> Get(Guid id)
         {
-            var eventRegistration = await _client.GetStateAsync<Event>("events",id.ToString());
+            var eventRegistration = await _client.GetStateAsync<Event>("events", id.ToString());
             return eventRegistration;
         }
 
@@ -26,12 +26,13 @@ namespace Techies.EventManagement.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] Event newEvent)
         {
-            if(newEvent== null || newEvent.Id == Guid.Empty || newEvent.NumberOfSeats < 1)
+            if (newEvent == null || newEvent.Id == Guid.Empty || newEvent.NumberOfSeats < 1)
                 return BadRequest();
 
-            await _client.SaveStateAsync("events",newEvent.Id.ToString(),newEvent);
+            await _client.SaveStateAsync("events", newEvent.Id.ToString(), newEvent);
+            await _client.PublishEventAsync<Event>("events", "new-event-created", newEvent);
 
-            return CreatedAtAction("Get",newEvent.Id);
+            return CreatedAtAction("Get", newEvent.Id);
         }
     }
 }

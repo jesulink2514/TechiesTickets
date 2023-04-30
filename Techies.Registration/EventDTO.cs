@@ -1,6 +1,6 @@
-﻿namespace Techies.EventManagement
+namespace Techies.Registration
 {
-    public class Event
+    public class EventDTO
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
