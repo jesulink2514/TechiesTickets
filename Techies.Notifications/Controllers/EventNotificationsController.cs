@@ -19,7 +19,7 @@ namespace Techies.Notifications.Controllers
         }
 
         [HttpPost("event-created")]
-        [Topic("events", "new-event-created")]
+        [Topic("events-pubsub", "new-event-created")]
         public async Task<IActionResult> EventCreated([FromBody] Event newEvent)
         {
             _logger.LogInformation($"New event created - {newEvent.Id}");

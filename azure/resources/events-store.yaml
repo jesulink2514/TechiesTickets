@@ -1,0 +1,15 @@
+componentType: state.azure.cosmosdb
+version: v1
+metadata:
+  - name: url
+    value: https://techies.documents.azure.com:443/
+  - name: masterKey
+    value: R9u5dvdR1f9VsAcKWSdGwzVqtb1m1SRLP78rSPhDoPBGbWVas4XXEyarTOULWsMQOPJ9ztad3B95ACDbPzS6ow==
+  - name: database
+    value: tickets
+  - name: collection
+    value: events
+scopes:
+  - events
+  - notifications
+  - registration

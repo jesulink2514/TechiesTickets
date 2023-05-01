@@ -1,0 +1,9 @@
+componentType: pubsub.azure.servicebus.topics
+version: v1
+metadata:
+  - name: connectionString
+    value: "Endpoint=sb://techiestickets.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=jOzAnohWYAhpR0WdduLV6M8zwTtXzJ9Wm+ASbC0oZYo="
+scopes:
+  - events
+  - notifications
+  - registration

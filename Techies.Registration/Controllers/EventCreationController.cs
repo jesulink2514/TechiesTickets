@@ -17,7 +17,7 @@ namespace Techies.Registration.Controllers
         }
 
         [HttpPost("event-created")]
-        [Topic("events", "new-event-created")]
+        [Topic("events-pubsub", "new-event-created")]
         public async Task<IActionResult> EventCreated([FromBody] EventDTO newEvent)
         {
             var eventToRegister = new Event

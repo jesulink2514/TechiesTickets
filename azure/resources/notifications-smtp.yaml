@@ -1,0 +1,17 @@
+componentType: bindings.smtp
+version: v1
+metadata:
+  - name: host
+    value: smtp.mailosaur.net
+  - name: port
+    value: "2525"
+  - name: user
+    value: "mwss79fe@mailosaur.net"
+  - name: password
+    value: "gWw13wC87ZLsHVDSkkfmB0rw8MOCZK7T"
+  - name: skipTLSVerify
+    value: false
+  - name: emailFrom
+    value: "mwss79fe@mailosaur.net"
+scopes:
+  - notifications

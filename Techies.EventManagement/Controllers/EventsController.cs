@@ -29,8 +29,8 @@ namespace Techies.EventManagement.Controllers
             if (newEvent == null || newEvent.Id == Guid.Empty || newEvent.NumberOfSeats < 1)
                 return BadRequest();
 
-            await _client.SaveStateAsync("events", newEvent.Id.ToString(), newEvent);
-            await _client.PublishEventAsync<Event>("events", "new-event-created", newEvent);
+            await _client.SaveStateAsync("events-store", newEvent.Id.ToString(), newEvent);
+            await _client.PublishEventAsync<Event>("events-pubsub", "new-event-created", newEvent);
 
             return CreatedAtAction("Get", newEvent.Id);
         }
